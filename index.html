@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo data storage component</title>
   <link rel="stylesheet" href="./css/style.css">
 
@@ -15,17 +16,72 @@
   </style>
 </head>
 <body>
+  <header>
 
-  You’ve used 815 GB of your storage
+  </header>
+  <main class="main">
+    <section class="main__background">
+    </section>
+    <section class="main__contaner">
+      <div class="main__contaner__items">
+        <div class="main__contaner__items__card main__contaner__items__card--upload">
+          <img src="./images/logo.svg" alt="">
+          <div class="main__contaner__items__card__options">
+            <button class="btn-principal">
+              <img src="./images/icon-document.svg" alt="img-documento">
+              <label for="btn-folder"></label>
+              <input type="file" name="btn-folder" id="btn-folder">
+            </button>
+            <button class="btn-principal">
+              <img src="./images/icon-folder.svg" alt="img-folder">
+              <label for="btn-file"></label>
+              <input type="file" name="btn-file" id="btn-file">
+            </button>
+            <button class="btn-principal">
+              <img src="./images/icon-upload.svg" alt="img-upload">
+              <label for="btn-upload"></label>
+              <input type="file" name="btn-upload" id="btn-upload">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main__contaner__items">
+        <div class="main__contaner__items__card main__contaner__items__card--charge">
+          <h3>You’ve used <span>815 GB</span> of your storage</h3>
+          <div class="main__contaner__items__card__barra">
+            <div class="main__contaner__items__card__barra--color">
+              <svg width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g stroke-width="0"></g><g  stroke-linecap="round" stroke-linejoin="round"></g><g><title>circle</title><circle cx="512" cy="512" r="256" fill="#ffffff" fill-rule="evenodd"></circle></g></svg>
+            </div>
+          </div>
+          <div class="main__contaner__items__card--peso">
+            <h4>0 GB</h4>
+            <h4>1000 GB</h4>
+          </div>
+
+        </div>
+        <div class="main__contaner__items--velocidad">
+          <h3>185</h3>
+          <span>GB LEFT</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="@alexanderhuisa">AlexanderHuisa</a>.
+    </div>
+  </footer>
+
+  <!-- You’ve used 815 GB of your storage
 
   185 GB Left
-  
+
   0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  1000 GB -->
+
+
 </body>
 </html>

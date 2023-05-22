@@ -6,14 +6,21 @@
 //pegar en todas las otras paginas
 
 //Variables
-$Fuente1: 'Lato', sans-serif;
-$Fuente2: 'Oswald', sans-serif;
+$font:'Raleway', sans-serif;
 $color-primario: #0C122C;
-$color-secundario: #8841DA;
-$color-variacion: #3f579a;
+$color-card:#1E2C69;
+$color-barra: #141F4B;
+$color-barra-color1:#FF9F96;
+$color-barra-color2:#FF5196;
 $color-claro: #FFF;
+$color-alternativo: #8B8A90;
 
 body{
-	background-color: $color-primario;
 	color: $color-claro;
+	// background-color: red;
+	background-image: url("../../images/bg-mobile.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: $font;
 }
+
