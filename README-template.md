@@ -10,10 +10,10 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What I learned](#grid and flexbox)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
+- [Author](#AlexanderHuisa)
 - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -48,13 +48,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- sCSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -97,9 +94,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - AlexanderHuisa(https://www.frontendmentor.io/profile/AlexanderHuisa)
+- Frontend Mentor - [@alexanderhuisa](https://www.frontendmentor.io/profile/AlexanderHuisa)
+- Twitter - [@alexanderhuisa](https://www.twitter.com/alexanderhuisa)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

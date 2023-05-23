@@ -1,3 +1,36 @@
+.main{
+    // background-color: rgba(255, 0, 0, 0.259);
+    max-width: 450px;
+    margin: 0 auto;
+    @include media(tablet){
+        max-width: 768px;
+    }
+    @include media(desktop-s){
+        max-width: 990px;
+    }
+    @include media(desktop-m){
+        max-width: 1200px;
+    }
+    @include media(desktop-l){
+        max-width: 1400px;
+    }
+}
+.background{
+	@include media(desktop-m){
+		background-image: url("../../images/bg-desktop.png");
+		position: fixed;
+		z-index: -1;
+        background-size: cover;
+		// background-color: red;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		top: 100%;
+		transform: translate(0,-100%);
+
+	}
+}
+
 .main__contaner{
     display: flex;
     flex-direction: column;
@@ -7,11 +40,12 @@
     gap: 1.2rem;
     // background-color: green;
     padding: 1rem;
+    // background-color: rgba(0, 128, 0, 0.163);
 
     &__items{
         position: relative;
         // background-color: blue;
-        height: calc(50% - 2rem);
+        height: calc(20rem - 2rem);
         width: 100%;
 
         &__card{
@@ -34,6 +68,20 @@
 
                 & img{
                     width: 9rem;
+                    @include media(desktop-m){
+                        width: 14rem;
+                    }
+                }
+
+                @include media(tablet){
+                    top: 50%;
+                    transform: translate(0,-50%);
+                }
+                @include media(desktop-m){
+                    height: 100%;
+                }
+                @include media(desktop-l){
+                    width: 85%;
                 }
             }
             &__options{
@@ -55,6 +103,21 @@
                     & span{
                         font-weight: 700;
                     }
+                    @include media(desktop-m){
+                        font-size: 1.2rem;
+                    }
+                }
+                @include media(tablet){
+                    top: 50%;
+                    transform: translate(0,-42%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                @include media(desktop-m){
+                    height: 80%;
+                    top: 100%;
+                    transform: translate(0,-100%);
                 }
 
             }
@@ -97,6 +160,23 @@
                 font-size: 0.9rem;
             }
         }
+        &--triangle{
+            @include media (tablet){
+                position: absolute;
+                top: 18%;
+                left: 73.3%;
+                border-right: 35px solid $color-claro;
+                border-top: 35px solid $color-claro;
+                border-left: 35px solid transparent;
+                border-bottom: 35px solid transparent;
+            }
+            @include media (desktop-s){
+                left: 78%;
+            }
+            @include media(desktop-m){
+                left: 79.8%;
+            }
+        }
         &--velocidad{
             position: absolute;
             display: flex;
@@ -122,8 +202,41 @@
                 color: $color-alternativo;
                 font-weight: 700;
             }
+
+            @include media(tablet){
+                top: 5%;
+                left: 63%;
+            }
+            @include media (desktop-s){
+                left: 70.5%;
+                width: 45%;
+            }
+            @include media(desktop-m){
+                width: 40%;
+                height: 30%;
+                top: 0;
+                left: 72%;
+            }
+            @include media(desktop-m){
+                left: 72.3%;
+                width: 14rem;
+            }
+            @include media(desktop-l){
+                left: 73%;
+            }
         }
+        
     }
+
+    @include media(tablet){
+        display: flex;
+        flex-direction: row;
+    }
+    @include media(desktop-l){
+        padding: 4rem;
+        gap: 0;
+    }
+    
 }
 
 .btn-principal{
@@ -145,6 +258,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        @include media(desktop-m){
+            // height: 2.5rem;
+            width: 2.5rem;
+        }
     }
 
     & label{
@@ -157,5 +274,9 @@
         z-index: 1;
         cursor: pointer;
         // background-color: rgba(255, 0, 0, 0.344);
+    }
+    @include media(desktop-m){
+        height: 5rem;
+        width: 5rem;
     }
 }

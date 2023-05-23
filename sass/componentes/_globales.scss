@@ -22,5 +22,11 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: $font;
+	@include media(desktop-m){
+		background-color: $color-primario;
+		background-image: none;
+
+	}
 }
+
 
